@@ -1,0 +1,189 @@
+/* Reset básico para padronizar margens e fontes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Tema padrão (Escuro) */
+body {
+  background-color: #121212;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Classe ativada via JavaScript quando o usuário clica no botão de tema */
+body.tema-claro {
+  background-color: #f4f6f8;
+  color: #1e293b;
+}
+
+.container {
+  background-color: #1e1e1e;
+  padding: 28px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s;
+}
+
+body.tema-claro .container {
+  background-color: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+.subtitulo {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  margin-bottom: 20px;
+}
+
+.campo {
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+body.tema-claro input {
+  background-color: #f8fafc;
+  color: #1e293b;
+  border: 1px solid #cbd5e1;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.btn-principal {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-top: 6px;
+}
+
+.btn-secundario {
+  padding: 8px 12px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+
+body.tema-claro .btn-secundario {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+/* Caixas de feedback (Erro e Sucesso) */
+.caixa-resultado {
+  margin-top: 18px;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.oculto {
+  display: none;
+}
+
+.erro {
+  background-color: rgba(239, 68, 68, 0.15);
+  border: 1px solid #ef4444;
+  color: #f87171;
+}
+
+body.tema-claro .erro {
+  color: #b91c1c;
+}
+
+.sucesso {
+  background-color: rgba(34, 197, 94, 0.15);
+  border: 1px solid #22c55e;
+  color: #4ade80;
+}
+
+body.tema-claro .sucesso {
+  color: #15803d;
+}
+
+/* Seção de histórico */
+.historico {
+  margin-top: 24px;
+  border-top: 1px solid #333;
+  padding-top: 16px;
+}
+
+body.tema-claro .historico {
+  border-top: 1px solid #e2e8f0;
+}
+
+.historico-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.historico h2 {
+  font-size: 1rem;
+}
+
+.btn-limpar {
+  background: transparent;
+  color: #ef4444;
+  font-size: 0.85rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 0.85rem;
+  padding: 8px 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+body.tema-claro li {
+  background-color: #f1f5f9;
+}

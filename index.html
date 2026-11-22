@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Combustível</title>
+  <!-- Conecta o arquivo CSS externo -->
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <main class="container">
+    <!-- Botão que muda o visual da página usando if/else (Requisito Mínimo) -->
+    <button id="btnTema" class="btn-secundario" onclick="alternarTema()">
+      ☀️ Mudar para Tema Claro
+    </button>
+
+    <h1>Calculadora de Combustível</h1>
+    <p class="subtitulo">Calcule os litros e o custo total da sua viagem</p>
+
+    <!-- Campos de entrada (usamos type="text" para treinar a validação manual no JS) -->
+    <div class="campo">
+      <label for="distancia">Distância da viagem (km):</label>
+      <input type="text" id="distancia" placeholder="Ex: 52">
+    </div>
+
+    <div class="campo">
+      <label for="consumo">Consumo do veículo (km/L):</label>
+      <input type="text" id="consumo" placeholder="Ex: 12.5">
+    </div>
+
+    <div class="campo">
+      <label for="preco">Preço do combustível (R$):</label>
+      <input type="text" id="preco" placeholder="Ex: 5.89">
+    </div>
+
+    <!-- Botão principal que chama a função de cálculo -->
+    <button class="btn-principal" onclick="calcularCombustivel()">
+      Calcular Gasto
+    </button>
+
+    <!-- Área onde aparecerá o resultado ou a mensagem de erro -->
+    <div id="resultado" class="caixa-resultado oculto"></div>
+
+    <!-- Área do histórico (Requisito Completo: array + laço + localStorage) -->
+    <section class="historico">
+      <div class="historico-topo">
+        <h2>Últimos cálculos</h2>
+        <button class="btn-limpar" onclick="limparHistorico()">Limpar</button>
+      </div>
+      <ul id="listaHistorico"></ul>
+    </section>
+  </main>
+
+  <!-- Conecta o arquivo JavaScript externo -->
+  <script src="script.js"></script>
+</body>
+</html>
