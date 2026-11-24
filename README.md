@@ -2,7 +2,7 @@
 
 Aplicação web desenvolvida para calcular a quantidade de litros necessários e o custo estimado de uma viagem com base na distância percorrida, no consumo médio do veículo e no preço do combustível.
 
-🔗 **Acesse o projeto online:** [https://douglascerqueirati.github.io/Minha-pagina/](https://douglascerqueirati.github.io/Minha-pagina/)
+🔗 **Acesse o projeto online:** https://douglascerqueirati.github.io/Calculadora-de-combustivel/
 
 ---
 
